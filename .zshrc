@@ -11,8 +11,13 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
+# -----------------
+# init
+# -----------------
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -77,7 +82,6 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -138,6 +142,7 @@ alias lint="nr lint"
 alias lintf="nr lint --fix"
 alias release="nr release"
 alias re="nr release"
+alias lg="lazygit"
 
 # -------------------------------- #
 # Directories
@@ -167,3 +172,11 @@ function yy() {
 }
 
 unsetopt beep
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+keep_current_path() {
+  printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"
+}
+precmd_functions+=(keep_current_path)

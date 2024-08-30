@@ -1,30 +1,3 @@
-api.Hints.style(`
-border: solid 1px #859289; 
-color:#D3C6AA; 
-background: initial; 
-background-color: #2D353B; 
-font-family: Cascadia Mono; 
-`);
-api.Hints.style(`
-border: solid 1px #859289 !important; 
-padding: 1px !important; 
-color: #83C092 !important;
-background: #2D353B !important;
-font-family: Cascadia Mono !important;
-`, "text");
-api.Visual.style('marks', 'background-color: #83C09299;');
-api.Visual.style('cursor', 'background-color: #D3C6AA;');
-
-api.map("K", "E")
-api.map("J", "R")
-
-api.map('H', 'S');
-api.map('L', 'D');
-
-settings.scrollStepSize = 140;
-
-/* set theme */
-settings.theme = `
 .sk_theme {
   font-family: Cascadia Mono, Cascadia Mono, Input Sans Condensed, Charcoal, sans-serif;
   font-size: 10pt;
@@ -361,7 +334,7 @@ settings.theme = `
 }
 
 #sk_editor {
-  background: #2D353B !important;
+  background: #2D353B;
   color: #D3C6AA;
 }
 
@@ -370,15 +343,7 @@ settings.theme = `
 }
 
 .normal-mode .ace_cursor {
-  background: #9DA9A099;
-}
-
-.ace-chrome .ace_cursor {
-  color: #9DA9A099;
-}
-
-.ace-chrome .ace_marker-layer .ace_selection {
-  background-color: #543A4899 !important;
+  background: #9DA9A0;
 }
 
 .ace-chrome .ace_gutter {
@@ -389,10 +354,6 @@ settings.theme = `
   color: #7A8478;
 }
 
-.ace-chrome .ace_print-margin {
-  background: transparent;
-}
-
 .ace-chrome .ace_marker-layer .ace_active-line {
   background: #343F44;
 }
@@ -401,5 +362,3 @@ settings.theme = `
   color: #9DA9A0;
   background: #2D353B;
 }
-`;
-

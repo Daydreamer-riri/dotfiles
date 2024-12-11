@@ -1,23 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
+    "actions":
     [
         {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+f1"
-        },
-        {
-            "command": "unbound",
-            "keys": "f1"
-        },
-        {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -26,50 +13,50 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
         },
         {
-            "command": 
+            "command":
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "id": "User.moveFocus.6CD791B",
+            "keys": "alt+k"
+        },
+        {
+            "command": "duplicateTab",
+            "id": "User.duplicateTab",
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "keys": "alt+n"
         },
         {
-            "command": 
+            "command":
             {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+plus"
-        },
-        {
-            "command": "toggleFocusMode",
-            "id": "User.toggleFocusMode",
-            "keys": "ctrl+f12"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
+                "action": "resizePane",
                 "direction": "left"
             },
-            "id": "User.moveFocus.2A0DA8E0",
-            "keys": "ctrl+alt+h"
+            "id": "User.resizePane.2A0DA8E0",
+            "keys": "alt+left"
         },
         {
-            "command": "togglePaneZoom",
-            "id": "User.togglePaneZoom",
-            "keys": "f10"
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "down",
@@ -79,36 +66,78 @@
             "keys": "alt+shift+minus"
         },
         {
-            "command": 
+            "command":
+            {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.FEF0D40B",
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": "toggleFocusMode",
+            "id": "User.toggleFocusMode",
+            "keys": "ctrl+f12"
+        },
+        {
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "right"
             },
             "id": "User.moveFocus.87C324ED",
-            "keys": "ctrl+alt+l"
+            "keys": "alt+l"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "down"
             },
             "id": "User.moveFocus.F747588A",
-            "keys": "ctrl+alt+j"
+            "keys": "alt+j"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
-                "direction": "up"
+                "direction": "left"
             },
-            "id": "User.moveFocus.6CD791B",
-            "keys": "ctrl+alt+k"
+            "id": "User.moveFocus.2A0DA8E0",
+            "keys": "alt+h"
         },
         {
-            "command": "duplicateTab",
-            "id": "User.duplicateTab",
-            "keys": "ctrl+shift+t"
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "id": "User.resizePane.6CD791B",
+            "keys": "alt+up"
+        },
+        {
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "id": "User.resizePane.87C324ED",
+            "keys": "alt+right"
+        },
+        {
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "id": "User.resizePane.F747588A",
+            "keys": "alt+down"
+        },
+        {
+            "command": "togglePaneZoom",
+            "id": "User.togglePaneZoom",
+            "keys": "alt+f"
         }
     ],
     "copyFormatting": "none",

@@ -120,10 +120,19 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "locked"
         }
-        bind "w" {
+        bind "s" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
+            }
+            SwitchToMode "locked"
+        }
+        bind "w" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij-sessionizer.wasm" {
+                floating true
                 move_to_focused_tab true
+                cwd "/"
+                root_dirs "/home/riri/workspace"
+                session_layout "project"
             }
             SwitchToMode "locked"
         }
@@ -288,7 +297,7 @@ plugins {
         //color_neutral_orange "#d65d0e" //neatural_orange
         //color_neutral_gray "#928374" //neutral_gray
 
-        format_left   "#[bg=$bg2,fg=$fg3] {session} {mode}#[bg=$bg1]{tabs}"
+        format_left   "#[bg=$bg2,fg=$fg3] {session} {mode}#[bg=$bg1] {tabs}"
         format_center "{notifications}"
         format_right  "#[bg=$bg1,fg=$bg2]#[bg=$bg2,fg=$fg4] {command_user}@{command_host} #[bg=$bg2,fg=$fg3]#[bg=$fg3,fg=$bg1] {datetime} "
         format_space  "#[bg=$bg1,fg=$fg1]"

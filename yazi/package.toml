@@ -1,8 +1,0 @@
-[plugin]
-deps = [
-  { use = "Rolv-Apneseth/starship", rev = "20d5a4d" },
-  { use = "yazi-rs/plugins:git", rev = "ec97f88" },
-]
-
-[flavor]
-deps = []

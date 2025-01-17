@@ -3061,6 +3061,28 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>JSON green</string>
+        <key>scope</key>
+        <string>source.json string.quoted.double.json</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a9b665</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>JSON blue</string>
+        <key>scope</key>
+        <string>source.json meta.mapping.key string.quoted.double.json</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7daea3</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>JSON orange</string>
         <key>scope</key>
         <string>support.type.property-name.json</string>
@@ -3068,17 +3090,6 @@
         <dict>
           <key>foreground</key>
           <string>#f2594b</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>JSON green</string>
-        <key>scope</key>
-        <string>string.quoted.double.json</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#a9b665</string>
         </dict>
       </dict>
       <dict>

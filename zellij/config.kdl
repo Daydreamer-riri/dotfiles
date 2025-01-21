@@ -273,6 +273,22 @@ plugins {
         color_neutral_gray "#928374" //neutral_gray
         color_neutral_orange "#d65d0e" //neatural_orange
 
+        color_base "#232136"
+        color_surface "#2a273f"
+        color_overlay "#393552"
+        color_muted "#6e6a86"
+        color_subtle "#908caa"
+        color_text "#e0def4"
+        color_love "#eb6f92"
+        color_gold "#f6c177"
+        color_rose "#ea9a97"
+        color_pine "#3e8fb0"
+        color_foam "#9ccfd8"
+        color_Iris "#c4a7e7"
+        color_highlight_low "#2a283e"
+        color_highlight_med "#44415a"
+        color_highlight_high "#56526e"
+
         // -- Gruvbox Light mode
         //color_bg0 "#fbf1c7" //light0
         //color_bg1 "#ebdbb2" //light1
@@ -301,10 +317,10 @@ plugins {
         //color_neutral_orange "#d65d0e" //neatural_orange
         //color_neutral_gray "#928374" //neutral_gray
 
-        format_left   "#[bg=$bg2,fg=$fg3] {session} {mode}#[bg=$bg1] {tabs}"
-        format_center "{notifications}"
-        format_right  "#[bg=$bg1,fg=$bg2]#[bg=$bg2,fg=$fg4] {command_user}@{command_host} #[bg=$bg2,fg=$fg3]#[bg=$fg3,fg=$bg1] {datetime} "
-        format_space  "#[bg=$bg1,fg=$fg1]"
+        format_left   "#[fg=$text] {session} {mode}#[]"
+        format_center "{tabs}"
+        // format_right  "#[fg=$bg2]#[bg=$bg2,fg=$fg4] {command_user}@{command_host} #[bg=$bg2,fg=$fg3]#[bg=$fg3,fg=$bg1] {datetime} "
+        format_space  "#[fg=$fg1]"
         format_hide_on_overlength "true"
         format_precedence "lrc"
 
@@ -313,30 +329,29 @@ plugins {
         border_format   "#[fg=$bg1]{char}"
         border_position "top"
 
-        hide_frame_for_single_pane "true"
+        hide_frame_for_single_pane "false"
 
-        mode_normal        "#[bg=$fg3,fg=$bg2]#[bg=$fg3,fg=$bg0,bold] NORMAL #[bg=$bg1,fg=$fg3]"
-        mode_tmux          "#[bg=$green,fg=$bg2]#[bg=$green,fg=$bg0,bold] TMUX #[bg=$bg1,fg=$green]"
-        mode_locked        "#[bg=$bg3,fg=$bg2]#[bg=$bg3,fg=$fg3,bold] LOCKED #[bg=$bg1,fg=$bg3]"
-        mode_pane          "#[bg=$aqua,fg=$bg2]#[bg=$aqua,fg=$bg0,bold] PANE #[bg=$bg1,fg=$aqua]"
-        mode_tab           "#[bg=$aqua,fg=$bg2]#[bg=$aqua,fg=$bg0,bold] TAB #[bg=$bg1,fg=$aqua]"
-        mode_scroll        "#[bg=$blue,fg=$bg2]#[bg=$blue,fg=$bg0,bold] SCROLL #[bg=$bg1,fg=$blue]"
-        mode_enter_search  "#[bg=$blue,fg=$bg2]#[bg=$blue,fg=$bg0,bold] ENT-SEARCH #[bg=$bg1,fg=$blue]"
-        mode_search        "#[bg=$blue,fg=$bg2]#[bg=$blue,fg=$bg0,bold] SEARCH #[bg=$bg1,fg=$blue]"
-        mode_resize        "#[bg=$yellow,fg=$bg2]#[bg=$yellow,fg=$bg0,bold] RESIZE #[bg=$bg1,fg=$yellow]"
-        mode_rename_tab    "#[bg=$yellow,fg=$bg2]#[bg=$yellow,fg=$bg0,bold] RENAME TAB #[bg=$bg1,fg=$yellow]"
-        mode_rename_pane   "#[bg=$yellow,fg=$bg2]#[bg=$yellow,fg=$bg0,bold] RENAME PANE #[bg=$bg1,fg=$yellow]"
-        mode_move          "#[bg=$yellow,fg=$bg2]#[bg=$yellow,fg=$bg0,bold] MOVE #[bg=$bg1,fg=$yellow]"
-        mode_session       "#[bg=$purple,fg=$bg2]#[bg=$purple,fg=$bg0,bold] SESSION #[bg=$bg1,fg=$purple]"
-        mode_prompt        "#[bg=$purple,fg=$bg2]#[bg=$purple,fg=$bg0,bold] PROMPT #[bg=$bg1,fg=$purple]"
+        mode_normal        "#[fg=$text] NORMAL "
+        mode_locked        "#[fg=$muted] LOCKED "
+        mode_pane          "#[fg=$pine,bold] PANE "
+        mode_tab           "#[fg=$rose,bold] TAB "
+        mode_scroll        "#[fg=$foam,bold] SCROLL "
+        mode_enter_search  "#[fg=$text,bold] ENT-SEARCH "
+        mode_search        "#[fg=$subtle,bold] SEARCH "
+        mode_resize        "#[fg=$gold,bold] RESIZE "
+        mode_rename_tab    "#[fg=$gold,bold] RENAME TAB "
+        mode_rename_pane   "#[fg=$gold,bold] RENAME PANE "
+        mode_move          "#[fg=$gold,bold] MOVE "
+        mode_session       "#[fg=$love,bold] SESSION "
+        mode_prompt        "#[fg=$love,bold] PROMPT "
 
-        tab_normal              "#[bg=$bg2,fg=$bg1]#[bg=$bg2,fg=$fg1] {index} #[bg=$bg2,fg=$fg1,bold] {name} {floating_indicator}#[bg=$bg1,fg=$bg2]"
-        tab_normal_fullscreen   "#[bg=$bg2,fg=$bg1]#[bg=$bg2,fg=$fg1] {index} #[bg=$bg2,fg=$fg1,bold] {name} {fullscreen_indicator}#[bg=$bg1,fg=$bg2]"
-        tab_normal_sync         "#[bg=$bg2,fg=$bg1]#[bg=$bg2,fg=$fg1] {index} #[bg=$bg2,fg=$fg1,bold] {name} {sync_indicator}#[bg=$bg1,fg=$bg2]"
-        tab_active              "#[bg=$yellow,fg=$bg1]#[bg=$yellow,fg=$bg2] {index} #[bg=$yellow,fg=$bg2,bold] {name} {floating_indicator}#[bg=$bg1,fg=$yellow]"
-        tab_active_fullscreen   "#[bg=$yellow,fg=$bg1]#[bg=$yellow,fg=$bg2] {index} #[bg=$yellow,fg=$bg2,bold] {name} {fullscreen_indicator}#[bg=$bg1,fg=$yellow]"
-        tab_active_sync         "#[bg=$yellow,fg=$bg1]#[bg=$yellow,fg=$bg2] {index} #[bg=$yellow,fg=$bg2,bold] {name} {sync_indicator}#[bg=$bg1,fg=$yellow]"
-        tab_separator           "#[bg=$bg1,fg=$fg1]"
+        tab_normal              "#[fg=$subtle] {index} #[fg=$subtle] {name} {floating_indicator} "
+        tab_normal_fullscreen   "#[fg=$subtle] {index} #[fg=$subtle] {name} {fullscreen_indicator} "
+        tab_normal_sync         "#[fg=$subtle] {index} #[fg=$subtle] {name} {sync_indicator} "
+        tab_active              "#[bg=$overlay,fg=$text] {index} #[bg=$overlay,fg=$text,bold] {name} {floating_indicator} "
+        tab_active_fullscreen   "#[bg=$overlay,fg=$text] {index} #[bg=$overlay,fg=$text,bold] {name} {fullscreen_indicator} "
+        tab_active_sync         "#[bg=$overlay,fg=$text] {index} #[bg=$overlay,fg=$text,bold] {name} {sync_indicator} "
+        tab_separator           " "
 
         tab_sync_indicator       ""
         tab_fullscreen_indicator "󰊓"
@@ -379,7 +394,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "gruvbox-dark"
+theme "rose-pine-moon"
  
 // Choose the base input mode of zellij.
 // Default: normal

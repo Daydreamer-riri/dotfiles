@@ -121,25 +121,25 @@ footer = { fg = "#2A273F", bg = "#e0def4" }
 [filetype]
 
 rules = [
-    # Images
-    { mime = "image/*", fg = "#9ccfd8" },
+  # Images
+  { mime = "image/*", fg = "#9ccfd8" },
 
-    # Videos
-    { mime = "video/*", fg = "#f6c177" },
-    { mime = "audio/*", fg = "#f6c177" },
+  # Videos
+  { mime = "video/*", fg = "#f6c177" },
+  { mime = "audio/*", fg = "#f6c177" },
 
-    # Archives
-    { mime = "application/zip", fg = "#eb6f92" },
-    { mime = "application/gzip", fg = "#eb6f92" },
-    { mime = "application/x-tar", fg = "#eb6f92" },
-    { mime = "application/x-bzip", fg = "#eb6f92" },
-    { mime = "application/x-bzip2", fg = "#eb6f92" },
-    { mime = "application/x-7z-compressed", fg = "#eb6f92" },
-    { mime = "application/x-rar", fg = "#eb6f92" },
+  # Archives
+  { mime = "application/zip", fg = "#eb6f92" },
+  { mime = "application/gzip", fg = "#eb6f92" },
+  { mime = "application/x-tar", fg = "#eb6f92" },
+  { mime = "application/x-bzip", fg = "#eb6f92" },
+  { mime = "application/x-bzip2", fg = "#eb6f92" },
+  { mime = "application/x-7z-compressed", fg = "#eb6f92" },
+  { mime = "application/x-rar", fg = "#eb6f92" },
 
-    # Fallback
-    { name = "*", fg = "#e0def4" },
-    { name = "*/", fg = "#9ccfd8" },
+  # Fallback
+  { name = "*", fg = "#e0def4" },
+  { name = "*/", fg = "#9ccfd8" },
 ]
 
 # : }}}

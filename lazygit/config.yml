@@ -4,6 +4,10 @@ gui:
   showBottomLine: false
   nerdFontsVersion: "3"
 
+  theme:
+    selectedLineBgColor:
+      - "#393552"
+
 git:
   paging:
     colorArg: always

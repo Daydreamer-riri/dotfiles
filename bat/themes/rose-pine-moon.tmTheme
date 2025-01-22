@@ -49,13 +49,35 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>JSON blue</string>
+      <key>scope</key>
+      <string>source.json meta.mapping.key string.quoted.double.json</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#9ccfd8</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JSON key quotes</string>
+      <key>scope</key>
+      <string>source.json meta.mapping.key punctuation.definition.string.begin.json, source.json meta.mapping.key punctuation.definition.string.end.json</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#9ccfd8</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>Number</string>
       <key>scope</key>
       <string>constant.numeric</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#f6c177</string>
+        <string>#eb6f92</string>
       </dict>
     </dict>
     <dict>

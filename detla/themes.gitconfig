@@ -37,17 +37,16 @@
 	file-modified-label = [*]
 	file-removed-label = [-]
 	file-renamed-label = [->]
-	file-decoration-style = "#434C5E" ul
-	file-decoration-style = "#84786A" ul
+	file-decoration-style = "#6e6a86" ul
 	# No hunk headers
 	hunk-header-style = omit
 	# Line numbers
 	line-numbers = true
 	line-numbers-left-style = "#6e6a86"
 	line-numbers-right-style = "#6e6a86"
-	line-numbers-minus-style = "#4b3148"
-	line-numbers-plus-style = "#3b4456"
-	line-numbers-zero-style = "#84786A"
+	line-numbers-minus-style = "#73515d"
+	line-numbers-plus-style = "#6f80a2"
+	line-numbers-zero-style = "#6e6a86"
 	line-numbers-left-format = " {nm:>3} │"
 	line-numbers-right-format = " {np:>3} │"
 	# Diff contents

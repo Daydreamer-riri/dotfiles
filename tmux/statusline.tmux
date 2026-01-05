@@ -99,6 +99,6 @@ set -g status-right "#[fg=#{@thm_base},bg=#{@thm_foam},bold] #(whoami) #[fg=#{@t
 setw -g window-status-activity-style "underscore,fg=#839496,bg=#{@thm_base}"
 setw -g window-status-separator " "
 setw -g window-status-style "NONE,fg=#839496,bg=#{@thm_base}"
-setw -g window-status-format '#[default] #I  #{b:pane_current_path} '
-setw -g window-status-current-format '#[fg=#464261,bg=#{@thm_hl_high}] #I #[fg=#464261,bg=#f4e9de] #{b:pane_current_path} '
+setw -g window-status-format '#[default] #I  #{b:window_name} '
+setw -g window-status-current-format '#[fg=#464261,bg=#{@thm_hl_high}] #I #[fg=#464261,bg=#f4e9de] #{b:window_name} '
 
